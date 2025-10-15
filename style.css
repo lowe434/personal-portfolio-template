@@ -1,0 +1,157 @@
+:root {
+  --accent: #2563eb;
+  --card: #f4f4f5;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.nav a {
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav a:hover {
+  background: var(--card);
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 48px 0 32px;
+}
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  padding-left: 8px;
+}
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+.hero .actions {
+  margin-top: 16px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  margin-right: 8px;
+}
+
+/* Sections */
+section {
+  padding: 32px 0;
+}
+section h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+section p.lead {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+/* Simple grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 640px) {
+  .grid.cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .grid.cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Project card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+.card h3 {
+  margin: 8px 0 6px;
+  font-size: 18px;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+.card .tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  margin-top: 8px;
+}
+
+/* Lists */
+.list {
+  padding-left: 18px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0 48px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
