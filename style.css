@@ -11,6 +11,11 @@ body {
   background: var(--bg);
   background-color: #797b81;
   line-height: 1.6;
+  background-image: url("images/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 /* Layout helpers */
@@ -45,9 +50,10 @@ a:hover {
 .brand {
   font-weight: 700;
   letter-spacing: 0.3px;
+  color:#ffffff;
 }
 .nav a {
-  color: var(--text);
+  color:#ffffff;
   padding: 6px 10px;
   border-radius: 6px;
 }
@@ -65,10 +71,13 @@ a:hover {
   margin: 0 0 8px;
   font-size: 28px;
   padding-left: 8px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
 }
 .hero p {
   margin: 0;
-  color: var(--muted);
+  color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
 }
 .hero .actions {
   margin-top: 16px;
@@ -79,13 +88,15 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: #2e2bf5;
-  color: var(--text);
+  color:#ffffff
 }
 .btn.primary {
   background: var(--accent);
   color: #ffffff;
   border-color: var(--accent);
   margin-right: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 /* Sections */
@@ -95,9 +106,14 @@ section {
 section h2 {
   margin: 0 0 8px;
   font-size: 22px;
+  text-decoration: underline;
+  color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
+
 }
 section p.lead {
-  color: var(--muted);
+  color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
   margin: 0 0 16px;
 }
 
@@ -146,13 +162,16 @@ section p.lead {
 /* Lists */
 .list {
   padding-left: 18px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
 }
 
 /* Footer */
 footer {
   border-top: 1px solid var(--border);
   padding: 24px 0 48px;
-  color: var(--muted);
+  color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
   font-size: 14px;
 }
 
