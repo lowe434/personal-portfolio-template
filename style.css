@@ -103,6 +103,17 @@ a:hover {
 section {
   padding: 32px 0;
 }
+
+.about p {
+    color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
+}
+
+.contact p {
+    color: #ffffff;
+  text-shadow: 0 0 5px #2e2bf5;
+}
+
 section h2 {
   margin: 0 0 8px;
   font-size: 22px;
